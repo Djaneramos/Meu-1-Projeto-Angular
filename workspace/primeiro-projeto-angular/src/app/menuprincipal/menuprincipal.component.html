@@ -1,8 +1,4 @@
 <div class="gradecursos">
-<app-cardcurso></app-cardcurso>
-<app-cardcurso></app-cardcurso>
-<app-cardcurso></app-cardcurso>
-<app-cardcurso></app-cardcurso>
-<app-cardcurso></app-cardcurso>
-<app-cardcurso></app-cardcurso>
+  <app-cadastrarcurso (onClickCadastrarCurso)="AddCurso($event)"></app-cadastrarcurso>
+<app-cardcurso [curso]="c" *ngFor="let c of listacursos"></app-cardcurso>
 </div>
